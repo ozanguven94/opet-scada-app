@@ -11,6 +11,21 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# --- MOBİL PWA & UYGULAMA İKONU ENJEKSİYONU ---
+st.markdown("""
+    <head>
+        <title>OPET SCADA</title>
+        <meta name="apple-mobile-web-app-title" content="OPET SCADA">
+        <meta name="application-name" content="OPET SCADA">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- Yüksek çözünürlüklü akaryakıt / otomasyon ikonu -->
+        <link rel="apple-touch-icon" href="https://img.icons8.com/color/512/gas-station.png">
+        <link rel="shortcut icon" href="https://img.icons8.com/color/512/gas-station.png">
+    </head>
+""", unsafe_allow_html=True)
+
+
 SHEET_ID = "17htReQxvrsjLw8Cf6ES25GsuHBnKFIN3Gh2aH5XkoYI"
 
 TANKLAR_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Tanklar"
